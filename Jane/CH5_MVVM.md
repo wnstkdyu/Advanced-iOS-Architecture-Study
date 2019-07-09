@@ -42,3 +42,6 @@ Ch.5 MVVM
 
     - `View`는 `Action`으로 전송만 하고, `State`로부터 결과를 전달받는다
     - `Action, State` 가 없다면 `View와 Reactor` 서로 송신,수신하는 역할을 담당하게되는데 이것을 분리시켜줌으로써 단방향 흐름을 만들었다고 할 수 있음.
+
+
+* Notion -> md 이상적이지 않다
