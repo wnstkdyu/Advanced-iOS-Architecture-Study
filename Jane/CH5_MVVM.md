@@ -5,7 +5,7 @@
 Ch.5 MVVM 
 
 [Dependency Visualize Graph](https://www.notion.so/eaff8283d12342b79528f776abf2f5c8)
-
+    ![](Graph.png)
 - 의견
     - KooberApp 같은 경우, 컴파일 타임에 AppDelegate 내에서는 KooberAppDependencyContainer하고만 의존성관계를 갖고있음. 이후 로직은 런타임 상황에 따라 작성한 로직, 필요한 부분을 주입 하여 사용하기 때문에 관리가 수월함(?)
     - 일반적인 케이스는 MainViewController만 등장하지만, SignUp,SignIn VC와 데이터를 주고받는 등의 역할 수행을 통해 의존성이 연결된 상태로 나타남. 유저 입장에서 아직 SignUp,SignIn화면으로 진입하지 않았지만 해당 항목들을 미리 연결되어 있는 부분이 낭비라고 생각이 듬
@@ -38,7 +38,7 @@ Ch.5 MVVM
     - Repository, Manager 같은 기능별 관리 객체를 생성하여 분리
 - ReactorKit 단방향 프레임워크? ([https://github.com/ReactorKit/ReactorKit](https://github.com/ReactorKit/ReactorKit))
 
-    ![](Untitled-3b836460-3cc0-4c1d-8e9e-6b9765a808cb.png)
+    ![](ReactorKit.png)
 
     - `View`는 `Action`으로 전송만 하고, `State`로부터 결과를 전달받는다
     - `Action, State` 가 없다면 `View와 Reactor` 서로 송신,수신하는 역할을 담당하게되는데 이것을 분리시켜줌으로써 단방향 흐름을 만들었다고 할 수 있음.
